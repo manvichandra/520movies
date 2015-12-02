@@ -21,7 +21,7 @@ Discs-16
 1. Sign in to Azure Portal
 
 2. Click NEW in the lower-left corner and then enter the values as shown in the figure below:- 
- !(https://github.com/manvichandra/520movies/tree/master/images/storage.jpg)
+ ![]({{site.baseurl}}/https://github.com/manvichandra/520movies/tree/master/images/storage.jpg storage account ![storage](https://github.com/manvichandra/520movies/tree/master/images/storage.jpg))
 
 
     Fig 1:creation of storage account
