@@ -1,5 +1,5 @@
 **Step 1**
-Create an Azure Storage account
+_Create an Azure Storage account_
 
 1. Sign in to Azure Portal
 
