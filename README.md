@@ -27,14 +27,18 @@ Discs-16
 
 ##Step 2
 **_Provision a Hadoop Cluster_**
+
 1. Click NEW -->Data + Analytics--> HDInsight and create a cluster as shown in the following image:-
 
 ![]({{site.baseurl}}/images/cluster.jpg)
      Fig 2:Provision of Hadoop Cluster
                         
 ##Step 3
+
 **_Login into Microsoft Azure HDInsight QUERY CONSOLE_**
+
 1. Once the HDInsight Cluster is provisioned in the Azure portal, click on the cluster name where you want to run the query.
+
 2. Enter the Hadoop user account and password. The default user name is admin; the password is what you entered while provisioning the cluster. The dashboard looks like  in the figure below:-
 
 ![]({{site.baseurl}}/images/query console.jpg)
@@ -48,17 +52,20 @@ Discs-16
      Fig 4:Upload data to Azure Blob
 2. Navigate to Microsoft Azure HDInsight QUERY CONSOLE and click on 
    File Browser-->Storage Account-->HDInsight cluster recently created.
+   
 3. The folder named "movies" is uploaded .
 
 ##Step 5
 _**Hive Queries**_
 
 1. On the Hive Editor tab, for Query Name, enter Query520_1. The query name is the job title. 
+
 2. In the query pane, enter the Hive query as shown in the image:
 
 ![]({{site.baseurl}}/images/queryeditor.jpg)
      Fig 5:Hive Query Editor
 3. Click Submit. It takes a few moments to get the results back.
+
 4. When the Status field changes to Completed, select View Details for the job. On the details page, the Job Output would be displayed.
 
 [_Note:_ Queries.txt contains the list of queries executed in this application.All the queries can be executed in the similar manner as described above]
