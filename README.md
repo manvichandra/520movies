@@ -21,12 +21,8 @@ Discs-16
 1. Sign in to Azure Portal
 
 2. Click NEW in the lower-left corner and then enter the values as shown in the figure below:- 
- ![storage](http://github.com/manvichandra/520movies/tree/master/images/storage.jpg)
- ![My Unicorn](http://github.com/unicorn.png).
  
-![storage](https://github.com/manvichandra/520movies/images/storage.jpg)
-
-
+ ![storage](http://github.com/manvichandra/520movies/tree/master/images/storage.jpg)
     Fig 1:creation of storage account
 
 ##Step 2
