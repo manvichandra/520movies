@@ -1,5 +1,5 @@
 
-We are basically analysing the  data associated with various movies including their Gross revenue,number of tickets sold,various distributors associated with the movies,rank,ratings,production countries.We are extracting data from a website called http://www.the-numbers.com/ which has a data of over 20,000 movies and nearly 100,000 people are now tracked and we continue our commitment to making this data available to the widest possible audience.
+We are basically analysing the  data associated with various movies including their Gross revenue,number of tickets sold,various distributors,rank,ratings and production countries.We are extracting data from a website called http://www.the-numbers.com/ which has a data of over 20,000 movies and nearly 100,000 people are now tracked and we continue our commitment to making this data available to the widest possible audience.
 We are processing data on Hadoop cluster using HIVEQL to display movie ratings, gross revenue etc.
 The data is represented in the form of graphs which would display the most popular movie on the basis various criteria.
 
@@ -31,7 +31,7 @@ Discs-16
 1. Click NEW -->Data + Analytics--> HDInsight and create a cluster as shown in the following image:-
 
  [Fig 2:Provision of Hadoop Cluster](http://github.com/manvichandra/520movies/tree/master/images/cluster.jpg)
-![]({{site.baseurl}}/images/cluster.jpg)
+
      
                         
 ##Step 3
@@ -42,15 +42,16 @@ Discs-16
 
 2. Enter the Hadoop user account and password. The default user name is admin; the password is what you entered while provisioning the cluster. The dashboard looks like  in the figure below:-
 
-![]({{site.baseurl}}/images/query console.jpg)
-    Fig 3:HDInsight Query Console
+ [Fig 3:HDInsight Query Console](http://github.com/manvichandra/520movies/tree/master/images/console.jpg)
+
 ## Step 4 
 **_Upload data to Azure Blob storage_**
 
 1. Upload data to Blob storage using Cloudberry Box for Azure Blob Storage as shown below:-
 
-![]({{site.baseurl}}/images/BLobStorage.jpg)
-     Fig 4:Upload data to Azure Blob
+ [Fig 4:Upload data to Azure Blob](http://github.com/manvichandra/520movies/tree/master/images/BLobStorage.jpg)
+
+
 2. Navigate to Microsoft Azure HDInsight QUERY CONSOLE and click on 
    File Browser-->Storage Account-->HDInsight cluster recently created.
    
@@ -63,8 +64,9 @@ _**Hive Queries**_
 
 2. In the query pane, enter the Hive query as shown in the image:
 
-![]({{site.baseurl}}/images/queryeditor.jpg)
-     Fig 5:Hive Query Editor
+ [ Fig 5:Hive Query Editor](http://github.com/manvichandra/520movies/tree/master/images/queryeditor.jpg)
+
+
 3. Click Submit. It takes a few moments to get the results back.
 
 4. When the Status field changes to Completed, select View Details for the job. On the details page, the Job Output would be displayed.
@@ -95,8 +97,10 @@ Password - The administrator password.
 
 7.When the Import Data dialog appears, click OK to accept the defaults. After the query completes, the data will be displayed in Excel as shown in the figure below:-
 
-![]({{site.baseurl}}/images/excel.jpg)
-   Fig 6:Load data to excel
+
+ [Fig 6:Load data to excel](http://github.com/manvichandra/520movies/tree/master/images/excel.jpg)
+
+
    
 ##**Special Thanks**
 - (https://developer.github.com/  "GitHub for  API and style")
