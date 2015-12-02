@@ -23,15 +23,16 @@ Discs-16
 2. Click NEW in the lower-left corner and then enter the values as shown in the figure below:- 
  
  [Fig 1:creation of storage account](http://github.com/manvichandra/520movies/tree/master/images/storage.jpg)
-    Fig 1:creation of storage account
+    
 
 ##Step 2
 **_Provision a Hadoop Cluster_**
 
 1. Click NEW -->Data + Analytics--> HDInsight and create a cluster as shown in the following image:-
 
+ [Fig 2:Provision of Hadoop Cluster](http://github.com/manvichandra/520movies/tree/master/images/cluster.jpg)
 ![]({{site.baseurl}}/images/cluster.jpg)
-     Fig 2:Provision of Hadoop Cluster
+     
                         
 ##Step 3
 
