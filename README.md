@@ -22,6 +22,7 @@ Discs-16
 
 2. Click NEW in the lower-left corner and then enter the values as shown in the figure below:- 
  ![storage](https://github.com/manvichandra/520movies/tree/master/images/storage.jpg)
+ ![My Unicorn](http://github.com/unicorn.png).
 
 
     Fig 1:creation of storage account
