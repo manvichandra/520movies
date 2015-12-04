@@ -1,0 +1,99 @@
+DROP TABLE IF EXISTS movies;
+CREATE EXTERNAL TABLE movies
+(
+Rank STRING,
+Movie STRING,
+Release_date DATE,
+Distributor STRING,
+Genre STRING,
+MPAA STRING,
+Gross double,
+Tickets_Sold BIGINT
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' 
+STORED AS TEXTFILE LOCATION 'wasb://mcluster@kbisen.blob.core.windows.net/movies';
+
+
+
+
+DROP TABLE IF EXISTS MAXGross;
+CREATE TABLE IF NOT EXISTS MAXGross(Release_date date, Gross DOUBLE,Movie string);
+INSERT OVERWRITE TABLE MAXGross
+
+select Release_date,Gross,Movie from movies where Gross >400000000;
+
+
+DROP TABLE IF EXISTS MAXTickets;
+CREATE TABLE IF NOT EXISTS MAXTickets(tickets_sold bigint, movie string);
+INSERT OVERWRITE TABLE MAXTickets
+select tickets_sold,movie from movies where tickets_sold>70285191;
+
+DROP TABLE IF EXISTS moviegenre;
+CREATE TABLE IF NOT EXISTS moviegenre(genre string, movie string);
+INSERT OVERWRITE TABLE moviegenre
+
+
+select genre,movie  from movies where genre='Action' or genre =='Adventure' or genre=='comedy' or genre=='Drama' or genre=='horror' or genre=='multiple genres' or genre=='Thriller/Suspense' 
+or genre=='Romantic Comedy' or genre=='Documentary' or  genre=='Black Comedy' or genre=='Concert/Performance';
+
+DROP TABLE IF EXISTS GRating;
+CREATE TABLE IF NOT EXISTS GRating(year string, mpaa string);
+INSERT OVERWRITE TABLE GRating
+
+select year(release_date),MPAA from movies where Release_date>'2008-07-16' and MPAA=="G";
+
+DROP TABLE IF EXISTS PG13Rating;
+CREATE TABLE IF NOT EXISTS PG13Rating(year string, mpaa string);
+INSERT OVERWRITE TABLE PG13Rating
+
+select year(release_date),MPAA from movies where Release_date>'2008-07-16' and MPAA=="PG-13";
+
+
+DROP TABLE IF EXISTS RRating;
+CREATE TABLE IF NOT EXISTS RRating(year string, mpaa string);
+INSERT OVERWRITE TABLE RRating
+
+select year(release_date),MPAA from movies where Release_date>'2008-07-16' and MPAA=="R";
+
+DROP TABLE IF EXISTS Distributor ;
+CREATE TABLE IF NOT EXISTS Distributor(Distributor  string, movie string);
+INSERT OVERWRITE TABLE Distributor 
+
+DROP TABLE IF EXISTS Moviegenre;
+CREATE TABLE IF NOT EXISTS Moviegenre(year string, mpaa string);
+INSERT OVERWRITE TABLE Moviegenre
+
+select Distributor ,movie from movies where Distributor=='20th Century Fox' or Distributor=='Eros Entertainment
+' or Distributor=='Fox Searchlight' or Distributor=='Freestyle Releasing' or Distributor=='IFC Films' or Distributor=='Lionsgate' or Distributor=='Magnolia Pictures' or Distributor=='Universal' or Distributor='Warner Bros.';
+
+DROP TABLE IF EXISTS countries;
+CREATE EXTERNAL TABLE countries
+(
+production_countries	string ,             	                    
+number_of_movies    	bigint ,             	                    
+production_budget   	double ,             	                    
+worldwide_boxoffice 	double 
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' 
+STORED AS TEXTFILE LOCATION 'wasb://mcluster@kbisen.blob.core.windows.net/countries';
+
+DROP TABLE IF EXISTS production_countries_movie ;
+CREATE TABLE IF NOT EXISTS production_countries_movie(production_countries  string, number_of_movies bigint);
+INSERT OVERWRITE TABLE production_countries_movie 
+
+select production_countries,number_of_movies from countries where number_of_movies>200;
+
+DROP TABLE IF EXISTS topratedgross;
+CREATE TABLE IF NOT EXISTS topratedgross(year int, Gross DOUBLE,Movie string);
+INSERT OVERWRITE TABLE topratedgross
+
+select year(release_date),Gross,Movie from movies where Rank==1;
+
+DROP TABLE IF EXISTS topratedtickets;
+CREATE TABLE IF NOT EXISTS topratedtickets(year int, Tickets_sold BIGINT,Movie string);
+INSERT OVERWRITE TABLE topratedtickets
+
+select year(release_date),Tickets_sold ,Movie from movies where Rank==1;
+
+
+
