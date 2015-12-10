@@ -99,9 +99,9 @@ Password - The administrator password.
 
 
  [Fig 6:Load data to excel](http://github.com/manvichandra/520movies/tree/master/images/excel.jpg)
-## **getting started with spark**
+## **Getting started with Apache Spark**
  
- ## Step 1
+**## Step 1**
  
  
 
