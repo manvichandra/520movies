@@ -114,6 +114,8 @@ Password - The administrator password.
 5.Parse the raw data into columns.
 
 6.Transform the dataset according to the Queries.
+
+
 _**In order to see the output for the Movie Dataset follow the step below:-**_
 
 ## **Step 2**
