@@ -107,7 +107,7 @@ Password - The administrator password.
 
 2. Click on Storage, Click on New button on bottom left corner, Now click on ‘Quick create’, put a store name of your choice and finally click ‘create storage account’ button
 
-Fig 7: Create a Storage Account
+    Fig 7: Create a Storage Account
 
 3. Select the new storage account from the list and click MANAGE ACCESS KEYS at the bottom of the page. Make a note of the PRIMARY ACCESS KEY (or the SECONDARY ACCESS KEY—either of the keys work). You will need this later in the tutorial.
 
@@ -119,7 +119,7 @@ Fig 7: Create a Storage Account
 
 3. Select the storage account that you have created, and then click on ‘Create HDInsight Cluster.
 
-Fig 8:Provision Spark Cluster
+   Fig 8:Provision Spark Cluster
 
 4. It will take around 30 minutes of time for the cluster creation.
 
@@ -133,7 +133,7 @@ Fig 8:Provision Spark Cluster
 
 1. Create a new notebook. Click New, and then click Python 2.
 
-Fig 9:Ipython notebook creation
+   Fig 9:Ipython notebook creation
 
 2. Import the "Spark.ipynb" attached in the code folder and press the Run button to execute.
    
