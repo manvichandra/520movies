@@ -103,12 +103,39 @@ Password - The administrator password.
  
 ## **Step 1**
 
-## **1.** 
-## Go to [https://manage.windowsazure.com](https://manage.windowsazure.com) and login to your Azure Account.
- 
- 
+1. Go to [https://manage.windowsazure.com](https://manage.windowsazure.com) and login to your Azure Account.
 
+2. Click on Storage, Click on New button on bottom left corner, Now click on ‘Quick create’, put a store name of your choice and finally click ‘create storage account’ button
 
+Fig 7: Create a Storage Account
+
+3. Select the new storage account from the list and click MANAGE ACCESS KEYS at the bottom of the page. Make a note of the PRIMARY ACCESS KEY (or the SECONDARY ACCESS KEY—either of the keys work). You will need this later in the tutorial.
+
+## **Step 2**
+
+1. Click on HDInsight, then click on ‘create an HDInsight cluster’, then click on spark.
+
+2. Now put cluster name of your choice, select cluster size as 4 data nodes, assign any password for the cluster. Make sure that you remember this password because you will have to use to login to the cluster once the cluster has been created.
+
+3. Select the storage account that you have created, and then click on ‘Create HDInsight Cluster.
+
+Fig 8:Provision Spark Cluster
+
+4. It will take around 30 minutes of time for the cluster creation.
+
+## **Step 3**
+
+1. Once cluster is created, launch launch the Jupyter notebook. For this From the Spark cluster blade, click Quick Links, and then from the Cluster Dashboard blade, click Jupyter Notebook. If prompted, enter the admin credentials for the cluster.
+
+2. You may also reach the Jupyter Notebook for your cluster by opening the following URL in your browser. Replace CLUSTERNAME with the name of your cluster: [https://CLUSTERNAME.azurehdinsight.net/jupyter](https://CLUSTERNAME.azurehdinsight.net/jupyter)
+
+## **Step 4**
+
+1. Create a new notebook. Click New, and then click Python 2.
+
+Fig 9:Ipython notebook creation
+
+2. Import the "Spark.ipynb" attached in the code folder and press the Run button to execute.
    
 ##**Special Thanks**
 - (https://developer.github.com/  "GitHub for  API and style")
