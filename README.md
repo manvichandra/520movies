@@ -133,7 +133,7 @@ Password - The administrator password.
 
 1. Create a new notebook. Click New, and then click Python 2.
 
-   Fig 9:Ipython notebook creation
+   Fig 9: Ipython notebook creation
 
 2. Import the "Spark.ipynb" attached in the code folder and press the Run button to execute.
    
