@@ -14,7 +14,7 @@ RAM-14GB
 
 Discs-16
 
-## **Getting Started**
+## **Getting Startedb Hive**
 ## Step 1
 **_Create an Azure Storage account_**
 
@@ -99,6 +99,11 @@ Password - The administrator password.
 
 
  [Fig 6:Load data to excel](http://github.com/manvichandra/520movies/tree/master/images/excel.jpg)
+ 
+ ## **Getting Started with Apache Spark**
+ ## Step 1
+ 
+ 
 
 
    
