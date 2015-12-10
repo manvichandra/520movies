@@ -102,6 +102,8 @@ Password - The administrator password.
 ## **Getting started with Apache Spark**
  
 ## **Step 1**
+
+### **1.** Go to [https://manage.windowsazure.com](https://manage.windowsazure.com) and login to your Azure Account.
  
  
 
