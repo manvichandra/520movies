@@ -144,4 +144,9 @@ Password - The administrator password.
 
 ## **Licence**
 
-Developed By:  Manvi Chandra
+Developed By:  
+- Kumari Parul Bisen
+- Manvi Chandra
+- Krutik Shah
+
+
