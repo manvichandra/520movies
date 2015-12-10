@@ -14,7 +14,7 @@ RAM-14GB
 
 Discs-16
 
-## **Getting Startedb Hive**
+## **Getting Started with Hive**
 ## Step 1
 **_Create an Azure Storage account_**
 
